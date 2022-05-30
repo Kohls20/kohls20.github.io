@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #c9d0d1;
+    font-style: normal;
+    font-family: 'Baloo Da 2', cursive, arial;
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: linear-gradient(#0c4547,#c9d0d1);
+}
+h1{
+    font-size: 45px;
+}
+.icon{
+    width: 35px;
+}
+a{
+    color: #01b6bd;
+    text-decoration: none;
+    cursor: pointer;
+}
+abbr{
+    text-decoration: none;
+}
+p, li{
+    font-size: 18px;
+}
+h2{
+    font-size: 28px;
+}
+h4{
+    font-size: 20px;
+}
+ul{
+    list-style-type: circle;
+}
+#prin{
+    background-color: lavender;
+    border-radius: 5px;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 30px;
+}
+#prin section{
+    padding: 10px;
+}
+.contatos{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    text-align: center;
+}
+.contatos div{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.objetivos{
+    grid-column: 2 / 6;
+    grid-row: 1;
+}
+.cursos{
+    grid-column: 2 / 6;
+    grid-row: 2;
+}
+.habilidades{
+    grid-column: 6 / 9;
+    grid-row: 1;
+    padding-left: 25px;
+}
+
+footer{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin: 30px;
+}
+.bt{
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    margin: 0;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+
+    h1{
+        font-size: 35px;
+    }
+    p, li, h4{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+
+    #prin{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .contatos{
+    grid-column: 1;
+    grid-row: 1;
+    width: 20px;
+    }
+    .contatos h2{
+        display: none;
+    }
+    .objetivos{
+        grid-column: 2 / 7;
+        grid-row: 1;
+    }
+    .cursos{
+        grid-column: 2 / 7;
+        grid-row: 3;
+    }
+    .habilidades{
+        grid-column: 2 / 7;
+        grid-row: 2;
+    }
+   
+
+}
